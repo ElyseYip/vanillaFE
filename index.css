@@ -1,0 +1,193 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: century-gothic, sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+h1{
+  font-size: 35px;
+}
+.flex{
+  display: flex;
+  flex: 1 1 0;
+}
+.font-weight-100{
+  font-weight: 100;
+}
+.promo{
+  background-color: red;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.promo-text{
+font-size: 0.8rem;
+}
+.navbar{
+  display: flex;
+  flex-direction: column;
+}
+.navbar.invisible{
+  display: none;
+}
+.main-nav{
+  padding: 20px 50px 10px 50px;
+}
+.navbar ul{
+  list-style-type: none;
+}
+.left-navbar{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.left-navbar a {
+  cursor: pointer;
+}
+.navbar-menu:hover{
+  font-weight: 900;
+}
+.search-btn{
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+}
+.menu-content{
+  padding-left: 50px;
+  display: none;
+}
+.menu-container.visible{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background: pink;
+  border-top: 1px solid grey;
+  transition: background-color 1s ease;
+}
+.menu-container.show .menu-content{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background: pink;
+  border-top: 1px solid grey;
+  transition: background-color 1s ease;
+}
+.menu-container.sticky .menu-content{
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  background: blue;
+}
+.menu-content.visible{
+  display:block;
+  z-index: 10;
+}
+.image{
+  display: block;
+  max-width: 100%;
+  max-height:600px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.squarer-image{
+  display: block;
+  max-width: 100%;
+  max-height:800px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.button-group{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  line-height: 3;
+  margin-bottom: 50px;
+}
+.p-text{
+  font-size: 14px;
+  font-weight:100;
+  color: gray;
+  margin-bottom: 0;
+}
+#discover-btn{
+  width: 130px;
+  height: 50px;
+  border-radius: 50px;
+  background:none;
+  border: 1px solid gray;
+  font-size: 15px;
+  font-weight: 100;
+}
+#shop-btn{
+  width: 130px;
+  height: 50px;
+  border-radius: 50px;
+  background:none;
+  border: 1px solid gray;
+  font-size: 15px;
+  font-weight: 100;
+}
+.men-fragrances-section{
+  max-width: 100%;
+  position: relative;
+  margin-bottom: 50px;
+}
+.men-fragrances-button-group{
+  position: absolute;
+  bottom: 45px;
+  left: 40%;
+  line-height: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text-men-fragrances{
+  color: white;
+}
+#men-discover-btn{
+  width: 130px;
+  height: 50px;
+  border-radius: 50px;
+  background:white;
+  border: 1px solid gray;
+  font-size: 15px;
+  font-weight: 100;
+}
+.explore-more-container{
+  border-block: 1px solid black;
+  padding: 40px;
+  margin-bottom: 20px;
+}
+.explore-more{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 20px;
+}
+.explore-more ul{
+  list-style-type: none;
+}
+.explore-list{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.explore-more ul li a{
+  color: gray;
+  font-weight: 100;
+}
